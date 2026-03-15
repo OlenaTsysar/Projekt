@@ -84,7 +84,7 @@ header:hover {
   position: relative;
 }
 .galtext {
-  background-image: url("/pictures/fon2.avif");
+  background-image: url("./pictures/fon2.avif");
   background-position: center;
   background-size: cover;
   height: 75vh;
@@ -173,7 +173,7 @@ scale: 1.1;
   grid-area: merkurij;
   background-color: rgba(0, 0, 0, 0.3);
 
-  background-image: url(/pictures/Mercury.jpg);
+  background-image: url(./pictures/Mercury.jpg);
   background-position: center;
   background-size: cover;
   color: antiquewhite;
@@ -198,7 +198,7 @@ scale: 1.1;
   grid-area: venera;
   background-color: rgba(0, 0, 0, 0.3);
 
-  background-image: url(/pictures/venera.jpg);
+  background-image: url(./pictures/venera.jpg);
   background-position: center;
   background-size: cover;
   color: antiquewhite;
@@ -225,7 +225,7 @@ scale: 1.1;
   grid-area: zemlya;
   background-color: rgba(0, 0, 0, 0.3);
 
-  background-image: url(/pictures/zemla.jpg);
+  background-image: url(./pictures/zemla.jpg);
   background-position: center;
   background-size: cover;
   color: antiquewhite;
@@ -251,7 +251,7 @@ scale: 1.1;
   grid-area: mars;
   background-color: rgba(0, 0, 0, 0.3);
 
-  background-image: url(/pictures/mars.jpg);
+  background-image: url(./pictures/mars.jpg);
   background-position: center;
   background-size: cover;
   color: antiquewhite;
@@ -277,7 +277,7 @@ scale: 1.1;
   grid-area: jupiter;
   background-color: rgba(0, 0, 0, 0.3);
 
-  background-image: url(/pictures/YUpiter.jpg);
+  background-image: url(./pictures/YUpiter.jpg);
   background-position: center;
   background-size: cover;
   color: antiquewhite;
@@ -303,7 +303,7 @@ scale: 1.1;
   grid-area: saturn;
   background-color: rgba(0, 0, 0, 0.3);
 
-  background-image: url(/pictures/saturn.jpg);
+  background-image: url(./pictures/saturn.jpg);
   background-position: center;
   background-size: cover;
   color: antiquewhite;
@@ -329,7 +329,7 @@ scale: 1.1;
   grid-area: uran;
   background-color: rgba(0, 0, 0, 0.3);
 
-  background-image: url(/pictures/uran.jpg);
+  background-image: url(./pictures/uran.jpg);
   background-position: center;
   background-size: cover;
   color: antiquewhite;
@@ -354,7 +354,7 @@ scale: 1.1;
   overflow-y: auto;
   grid-area: neptun;
 
-  background-image: url(/pictures/neptun.jpg);
+  background-image: url(./pictures/neptun.jpg);
   background-position: center;
   background-size: cover;
   color: rgb(237, 240, 201);
@@ -379,7 +379,7 @@ scale: 1.1;
   overflow-y: auto;
   grid-area: pluton;
 
-  background-image: url(/pictures/pluton.jpg);
+  background-image: url(./pictures/pluton.jpg);
   background-position: center;
   background-size: cover;
   color: rgb(237, 240, 201);
@@ -425,7 +425,7 @@ align-items: center;
 
 .butpriglas{
   width: 100px;
-  /* transform: translate(45%, 45%); */
+
 }
 
 .priglas{
@@ -445,7 +445,7 @@ align-items: center;
   background-color: bisque;
   border: 2px solid black;
   border-radius: 10px;
-  /* transform: translateX(120%); */
+
 }
 .form{
     display: flex;
@@ -453,7 +453,7 @@ align-items: center;
     padding: 20px;
     gap: 10px;
 
-    /* height: 200px; */
+
     justify-content: space-between;
 }
 .close{
