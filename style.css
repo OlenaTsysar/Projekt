@@ -468,7 +468,8 @@ align-items: center;
   height: 30px;
   border: 2px solid black;
   border-radius: 10px;
-  transform: translateX(25%);
+  left: 50%;
+  transform: translateX(50%);
 }
 #kontakt{
   height: 20vh;
@@ -545,9 +546,7 @@ border-radius: 10px;
 .contform{
 width: 250px;
 }
-.btn_submit{
-  transform: translateX(15%);
-}
+
 #kontakt{
   font-size: 22px;
 }
@@ -600,9 +599,7 @@ h1{
 .contform{
 width: 250px;
 }
-.btn_submit{
-  transform: translateX(15%);
-}
+
 #kontakt{
   font-size: 20px;
 }
