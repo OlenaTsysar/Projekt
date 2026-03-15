@@ -1,0 +1,620 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.icon{
+  width: 40px;
+  height: 40px;
+  fill: aliceblue;
+}
+header {
+display: flex;
+justify-content: space-between;
+padding-left: 10px;
+padding-right: 10%;
+  background-image: linear-gradient(to right, #4caaf7, #2b2672);
+
+  height: 12vh;
+  width: 100%;
+  text-align: center;
+  padding-top: 3vh;
+  border-radius: 10px;
+  color: rgb(224, 232, 233);
+  border: 3px solid rgb(72, 112, 156);
+}
+header:hover {
+  background-image: linear-gradient(to right, #2b2672, #4caaf7);
+}
+.nav_menu {
+  margin-top: 0.5vh;
+  height: 12vh;
+  background-color: rgb(131, 131, 221);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  border-radius: 10px;
+  border: 4px solid rgb(65, 2, 107);
+}
+.nav_list {
+  /* width: 1000px; */
+  width: 100%;
+  height: 12vh;
+
+  display: flex;
+  justify-content: space-around;
+
+  align-content: center;
+  align-items: center;
+}
+
+.listbut {
+  padding: 10px;
+  background-color: cornflowerblue;
+  border: 5px solid #2b2672;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #180cc4;
+}
+.listbut:hover {
+  background-color: #8c8b9c;
+}
+
+.hamburger {
+  display: flex;
+  /* display: none; */
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  padding-right: 10px;
+}
+
+.hamburger span {
+  width: 20px;
+  height: 3px;
+  background-color: black;
+}
+
+
+#galaxies {
+  margin-top: 0.5vh;
+  height: 75vh;
+  position: relative;
+}
+.galtext {
+  background-image: url("/pictures/fon2.avif");
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  color: rgb(195, 206, 206);
+  font-size: 36px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.gal {
+  height: 50px;
+  padding: 10px;
+
+  border-radius: 10px;
+  background-color: #8c8b9c;
+  font-size: 20px;
+  color: #180cc4;
+}
+.gal:hover {
+  background-color: #4caaf7;
+}
+
+.galknop {
+  display: flex;
+  position: absolute;
+  bottom: 5vh;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.containergal{
+display: flex;
+flex-direction: column;
+padding: 10px;
+border-radius: 10px;
+border: 2px solid black;
+gap: 10px;
+  font-family: "Cookie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img{
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+#elipsecont, #spiralcont, #linzacont, #neprcont{
+
+  display: flex;
+  padding: 10px;
+
+  border: 2px solid black;
+  border-radius: 10px;
+
+  gap: 10px;
+
+}
+
+#spiralcont, #neprcont{
+flex-direction: row-reverse;
+}
+
+.elipspict:hover, .spiralpict:hover, .linzapict:hover, .neprpict:hover{
+scale: 1.1;
+}
+
+.planets {
+  padding-top: 5px;
+  height: 88vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  grid-template-areas: 
+  "merkurij venera zemlya"
+  "mars jupiter saturn"
+  "uran neptun pluton";
+}
+.merkurij{
+  position: relative;
+  padding: 10px;
+  overflow-y: auto;
+  grid-area: merkurij;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  background-image: url(/pictures/Mercury.jpg);
+  background-position: center;
+  background-size: cover;
+  color: antiquewhite;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.merkurijoverlay{
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 2000ms;
+}
+
+.merkurij:hover .merkurijoverlay{
+  transform: translateX(0);
+}
+
+.venera{
+  position: relative;
+  padding: 10px;
+  overflow-y: auto;
+  grid-area: venera;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  background-image: url(/pictures/venera.jpg);
+  background-position: center;
+  background-size: cover;
+  color: antiquewhite;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.veneraoverlay{
+  position: absolute;
+  left: 0;
+  transition: transform 2000ms;
+
+  transform: translateX(-100%);
+
+
+}
+.venera:hover .veneraoverlay{
+  transform: translateX(0);
+}
+
+.zemlya{
+  position: relative;
+  padding: 10px;
+  overflow-y: auto;
+  grid-area: zemlya;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  background-image: url(/pictures/zemla.jpg);
+  background-position: center;
+  background-size: cover;
+  color: antiquewhite;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.zemlyaoverlay{
+  position: absolute;
+
+  left: 0;
+  transform: translateX(-100%);
+
+  transition: transform 2000ms;
+}
+.zemlya:hover .zemlyaoverlay{
+  transform: translateX(0);
+}
+
+.mars{
+  position: relative;
+  padding: 10px;
+  overflow-y: auto;
+  grid-area: mars;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  background-image: url(/pictures/mars.jpg);
+  background-position: center;
+  background-size: cover;
+  color: antiquewhite;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.marsoverlay{
+  position: absolute;
+
+  left: 0;
+  transform: translateX(-100%);
+
+  transition: transform 2000ms;
+}
+.mars:hover .marsoverlay{
+  transform: translateX(0);
+}
+
+.jupiter{
+  position: relative;
+  padding: 10px;
+  overflow-y: auto;
+  grid-area: jupiter;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  background-image: url(/pictures/YUpiter.jpg);
+  background-position: center;
+  background-size: cover;
+  color: antiquewhite;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.jupiteroverlay{
+  position: absolute;
+
+  left: 0;
+  transform: translateX(-100%);
+
+  transition: transform 2000ms;
+}
+.jupiter:hover .jupiteroverlay{
+  transform: translateX(0);
+}
+
+.saturn{
+  position: relative;
+  padding: 10px;
+  overflow-y: auto;
+  grid-area: saturn;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  background-image: url(/pictures/saturn.jpg);
+  background-position: center;
+  background-size: cover;
+  color: antiquewhite;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.saturnoverlay{
+  position: absolute;
+
+  left: 0;
+  transform: translateX(-100%);
+
+  transition: transform 2000ms;
+}
+.saturn:hover .saturnoverlay{
+  transform: translateX(0);
+}
+
+.uran{
+  position: relative;
+  padding: 10px;
+  overflow-y: auto;
+  grid-area: uran;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  background-image: url(/pictures/uran.jpg);
+  background-position: center;
+  background-size: cover;
+  color: antiquewhite;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.uranoverlay{
+  position: absolute;
+
+  left: 0;
+  transform: translateX(-100%);
+
+  transition: transform 2000ms;
+}
+.uran:hover .uranoverlay{
+  transform: translateX(0);
+}
+
+.neptun{
+  position: relative;
+  padding: 10px;
+  overflow-y: auto;
+  grid-area: neptun;
+
+  background-image: url(/pictures/neptun.jpg);
+  background-position: center;
+  background-size: cover;
+  color: rgb(237, 240, 201);
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.neptunoverlay{
+  position: absolute;
+
+  left: 0;
+  transform: translateX(-100%);
+
+  transition: transform 2000ms;
+}
+.neptun:hover .neptunoverlay{
+  transform: translateX(0);
+}
+
+.pluton{
+  position: relative;
+  padding: 10px;
+  overflow-y: auto;
+  grid-area: pluton;
+
+  background-image: url(/pictures/pluton.jpg);
+  background-position: center;
+  background-size: cover;
+  color: rgb(237, 240, 201);
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.plutonoverlay{
+  position: absolute;
+
+  left: 0;
+  transform: translateX(-100%);
+
+  transition: transform 2000ms;
+}
+.pluton:hover .plutonoverlay{
+  transform: translateX(0);
+}
+
+
+#onas{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 90vh;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: aquamarine;
+
+ 
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+
+
+
+}
+.onastext{
+  width: 50vw;
+  text-align: center;
+  font-size: 26px;
+}
+
+.butpriglas{
+  width: 100px;
+  /* transform: translate(45%, 45%); */
+}
+
+.priglas{
+
+  width: 100px;
+  height: 60px;
+  background-color: burlywood;
+  border: 2px solid black;
+  border-radius: 10px;
+
+
+}
+.contform{
+  position: relative;
+  height: 350px;
+  width: 300px;
+  background-color: bisque;
+  border: 2px solid black;
+  border-radius: 10px;
+  /* transform: translateX(120%); */
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+
+    /* height: 200px; */
+    justify-content: space-between;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: 900;
+}
+.btn_submit{
+  width: 120px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+  transform: translateX(25%);
+}
+#kontakt{
+  height: 20vh;
+  background-color: #4caaf7;
+  font-size: 26px;
+  color: darkblue;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.zvezdacont{
+  width: 100%;
+  padding: 50px;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+
+@media (max-width: 1024px){
+
+
+}
+
+@media (max-width: 768px){
+
+h1{
+  font-size: 26px;
+}
+
+.nav_menu{
+flex-direction: row;
+justify-content: end;
+
+}
+.nav_list {
+width: 150px;
+height: 40vh;
+background-color: #4caaf7;
+flex-direction: column;
+align-items: center;
+z-index: 900;
+padding-right: 10px;
+border: 2px solid rgb(4, 4, 8);
+border-radius: 10px;
+}
+
+.listbut {
+  font-size: 12px;
+}
+
+.galtext {
+  font-size: 24px;
+}
+.gal{
+  font-size: 14px;
+  height: 30px;
+  padding-top: 6px;
+}
+.galknop{
+  flex-wrap: wrap;
+  bottom: 1vh;
+}
+
+#onas{
+  height: 70vh;
+}
+.onastext{
+  font-size: 22px;
+}
+
+.contform{
+width: 250px;
+}
+.btn_submit{
+  transform: translateX(15%);
+}
+#kontakt{
+  font-size: 22px;
+}
+img{
+  width: 120px;
+  height: 120px;
+}
+#elipsecont, #spiralcont, #linzacont, #neprcont{
+  display: flex;
+  flex-wrap: wrap;
+}
+.merkurijoverlay, .veneraoverlay, .zemlyaoverlay, .marsoverlay, .saturnoverlay, .uranoverlay, .plutonoverlay, .jupiteroverlay{
+  font-size: 12px;
+}
+}
+
+@media (max-width: 400px){
+.galtext {
+  font-size: 22px;}
+h1{
+  font-size: 24px;
+}
+
+}
+@media (max-width: 320px){
+h1{
+  font-size: 20px;
+}
+  .galtext {
+  font-size: 21px;
+}
+.gal{
+  font-size: 10px;
+  height: 30px;
+  padding-top: 6px;
+}
+.galknop{
+  flex-wrap: wrap;
+  bottom: 1vh;
+}
+#onas{
+  height: 70vh;
+}
+.onastext{
+  font-size: 22px;
+}
+.butpriglas{
+  transform: translateX(45%);
+}
+.contform{
+width: 250px;
+}
+.btn_submit{
+  transform: translateX(15%);
+}
+#kontakt{
+  font-size: 20px;
+}
+img{
+  width: 120px;
+  height: 120px;
+}
+#elipsecont, #spiralcont, #linzacont, #neprcont{
+  display: flex;
+  flex-wrap: wrap;
+}
+.merkurijoverlay, .veneraoverlay, .zemlyaoverlay, .marsoverlay, .saturnoverlay, .uranoverlay, .plutonoverlay, .jupiteroverlay{
+  font-size: 10px;
+}
+}

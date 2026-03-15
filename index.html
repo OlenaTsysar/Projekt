@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="itstep">
+        <svg class="icon">
+          <use href="icons.svg#sphere"></use>
+        </svg>
+      </a>
+
+      <h1>Добро пожаловать в мир астрономии!</h1>
+    </header>
+    <nav class="nav_menu">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+       
+      <ul class="nav_list">
+        <li class="list_item1">
+          <button class="listbut"><a href="#galaxies">Галактики</a></button>
+        </li>
+        <li class="list_item2">
+          <button class="listbut"><a href="zvezda.html">Звезды</a></button>
+        </li>
+        <li class="list_item3">
+          <button class="listbut"><a href="planets.html">Планеты</a></button>
+        </li>
+        <li class="list_item4">
+          <button class="listbut"><a href="#onas">O нас</a></button>
+        </li>
+        <li class="list_item">
+          <button class="listbut"><a href="#kontakt">Контакты</a></button>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="galaxies">
+      <div class="galtext">
+        <br />
+        <p>
+          Последовательность эволюции звездных систем была предложена Эдвином
+          Хабблом. Спиральная галактика – наиболее распространенный тип, а наша
+          галактика – Млечный путь – относится именно к этому виду. Какие же еще
+          бывают виды галактик?
+        </p>
+        <p>
+          По этой классификации существует четыре основных типа галактик. Иногда
+          к отдельному виду относят карликовые галактики, однако ничем, кроме
+          своего относительно малого размера они не выделяются и сами
+          принадлежат к тому или иному типу в классической категоризации.
+        </p>
+      </div>
+      <div class="galknop">
+        <button class="gal">
+          <a href="elipse.html#elipsecont">Эллиптическая</a>
+        </button>
+
+        <button class="gal">
+          <a href="elipse.html#spiralcont">Спиральная</a>
+        </button>
+
+        <button class="gal">
+          <a href="elipse.html#linzacont">Линзообразная</a>
+        </button>
+
+        <button class="gal">
+          <a href="elipse.html#neprcont">Неправильная</a>
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <section id="onas">
+        <div class="onastext">
+          <p>Предлагаем прослушать курс лекций по астрономии.</p>
+          <p>Для записи заполните форму:</p>
+        </div>
+<div class="butpriglas">
+        <button class="priglas">Заполните форму
+</div>
+        </button>
+        <div class="contform">
+          <div class="close">X</div>
+          <form class="form" action="" method="POST">
+            <label for=""
+              >Имя
+              <input type="text" name="name" placeholder="Введите своё имя"
+              required />
+            </label>
+            <label for=""
+              >Почта
+              <input
+                type="email"
+                name="email"
+                placeholder="Введите свою почту"
+                required
+              />
+            </label>
+            <label for="city">Выберите курс:</label>
+   <select id="kurz" name="kurz">
+       <option value="galaxi">Галактики</option>
+       <option value="stars">Звезды</option>
+       <option value="planets">Планеты</option>
+   </select>
+            <label for="message">Сообщение</label>
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Введите сообщение">
+            </textarea>
+            <button class="btn_submit" type="submit">Отправить</button>
+          </form>
+        </div>
+
+ 
+      </section>
+      <section id="kontakt">
+
+        <p>Наши контакты:</p>
+        <p>tel: +420 547 25 254</p>
+        <p>email: dfgh@mnvmcvnc.gmail</p>
+        <p>Пн_пт: 8.00-18.00</p>
+
+      </section>
+    </footer>
+  </body>
+</html>
